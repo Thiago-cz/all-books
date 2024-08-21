@@ -1,0 +1,60 @@
+name: "🚀 Feature Request"
+description: Create a new ticket for a feature request.
+title: "🚀 [FEATURE] - <title>"
+labels: [
+  "enhancement",
+  "feature request"
+]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Feature Description"
+      description: Please describe the new feature you would like to see implemented.
+      placeholder: Provide a clear and concise description of what the feature does...
+    validations:
+      required: true
+  - type: textarea
+    id: justification
+    attributes:
+      label: "Justification"
+      description: Explain why this feature is important and how it adds value to the project.
+      placeholder: Describe the problem this feature will solve or the use case it supports...
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives"
+      description: List any alternative solutions or features you've considered.
+      placeholder: Consider other solutions, if applicable...
+    validations:
+      required: false
+  - type: textarea
+    id: implementation
+    attributes:
+      label: "Implementation"
+      description: If you have a suggestion on how to implement this feature, please describe it here.
+      placeholder: Provide any implementation details or ideas, if available...
+    validations:
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: Add any other context, screenshots, or information about the feature request here.
+      placeholder: Add any other information that may help understand or implement the feature...
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: How critical is this feature request?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: false
