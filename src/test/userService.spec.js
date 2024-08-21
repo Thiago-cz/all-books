@@ -9,7 +9,8 @@ describe('Testando função emailExiste de userService', () => {
     });
     it('deve retornar FALSE para email inexistente', () => {
         const email = undefined;
-        expect(emailExiste(email, testeDB)).toBe(false);
+        //trocando false por true para travar testes no workflow
+        expect(emailExiste(email, testeDB)).toBe(true);
     });
 
     it('deve retornar FALSE para email vazio', () => {
