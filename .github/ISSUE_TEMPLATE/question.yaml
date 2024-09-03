@@ -1,0 +1,31 @@
+name: "❓ Question"
+description: Ask a question related to the project.
+title: "❓ [QUESTION] - <title>"
+labels: [
+ "question"
+]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: "Question"
+      description: Please describe your question clearly and concisely.
+      placeholder: What do you want to ask?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      description: Provide any context that will help others understand your question.
+      placeholder: Describe the context around your question...
+    validations:
+      required: false
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "Additional Information"
+      description: Add any additional context or information here.
+      placeholder: Any other details or notes...
+    validations:
+      required: false
