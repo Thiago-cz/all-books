@@ -1,0 +1,43 @@
+name: "📝 Task"
+description: Create a new task.
+title: "📝 [TASK] - <title>"
+labels: [
+ "task"
+]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter a clear and concise description of the task.
+      placeholder: Short and explicit description of the task...
+    validations:
+      required: true
+  - type: textarea
+    id: subtasks
+    attributes:
+      label: "Subtasks"
+      description: List any subtasks that need to be completed.
+      value: |
+        - [ ] Subtask 1
+        - [ ] Subtask 2
+        - [ ] Subtask 3
+      render: markdown
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: Define what is necessary for the task to be considered complete.
+      placeholder: Clearly defined acceptance criteria...
+    validations:
+      required: true
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "Additional Information"
+      description: Add any additional context or information here.
+      placeholder: Any other details or notes...
+    validations:
+      required: false
